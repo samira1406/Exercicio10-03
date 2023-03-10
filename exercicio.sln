@@ -1,25 +1,43 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.5.33424.131
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercicio", "exercicio\exercicio.csproj", "{40D055F1-511D-4919-B357-D34DC1EEB3DC}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{40D055F1-511D-4919-B357-D34DC1EEB3DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40D055F1-511D-4919-B357-D34DC1EEB3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40D055F1-511D-4919-B357-D34DC1EEB3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40D055F1-511D-4919-B357-D34DC1EEB3DC}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CAB77DB0-8B89-48DB-A9B5-4155BEBE51C9}
-	EndGlobalSection
-EndGlobal
+using System;
+
+public class Exercicio1
+{
+    public static void Main()
+    {
+        int convidadosNoivo = Convert.ToInt32(Console.ReadLine());
+        int convidadosNoiva = Convert.ToInt32(Console.ReadLine());
+        int convidadosPresentesNoivo = 200;
+        int convidadosPresentesNoiva = 200;
+        int TotalConvidados = convidadosNoiva + convidadosNoivo;
+        int TotalConvidadosPresentes = convidadosPresentesNoiva + convidadosPresentesNoivo;
+
+        if (convidadosNoiva >= convidadosNoivo)
+        {
+            Console.WriteLine("A noiva tem mais convidados que o noivo");
+        }
+        else
+        {
+            Console.WriteLine("O noivo tem mais convidados que a noiva");
+        }
+
+        if (convidadosNoivo <= convidadosNoiva)
+        {
+            Console.WriteLine("O noivo tem menos convidados que a noiva");
+        }
+
+        if (TotalConvidados == TotalConvidadosPresentes)
+        {
+            Console.WriteLine("Todos os convidados compareceram");
+        }
+
+
+        if(TotalConvidados <= TotalConvidadosPresentes)
+        {
+            Console.WriteLine("Tem penetras na festa de casamento");
+        }
+        else
+        {
+            Console.WriteLine("Não tem penetras na festa");
+        }
+    }
+}
